@@ -23,8 +23,8 @@ function draw() {
 
 class Dvd {
   constructor() {
-    this.x = random(100, 900);
-    this.y = random(100, 500);
+    this.x = 300;
+    this.y = 400;
     this.sizex = 100;
     this.sizey = 60;
 
@@ -40,8 +40,9 @@ class Dvd {
   }
 
   movement() {
-    this.x = this.x + this.xspeed;
     this.y = this.y + this.yspeed;
+    this.x = this.x + this.xspeed;
+
 
     if (this.x + this.sizex == width || this.x == 0) {
       this.xspeed = this.xspeed * -1;
