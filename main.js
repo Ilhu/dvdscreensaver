@@ -23,8 +23,8 @@ function draw() {
 
 class Dvd {
   constructor() {
-    this.x = 500;
-    this.y = 300;
+    this.x = random(100, 900);
+    this.y = random(100, 500);
     this.sizex = 100;
     this.sizey = 60;
 
