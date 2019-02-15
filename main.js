@@ -35,7 +35,8 @@ class Dvd {
   }
 
   show() {
-    rect(this.x,
+    image(image,
+         this.x,
          this.y,
          this.sizex,
          this.sizey)
