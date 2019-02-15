@@ -10,7 +10,7 @@ function setup() {
   dvdImageInput = createFileInput(handleFile);
   dvdImageInput.position(1000, 600);
   dvd = new Dvd();
-  dvdImage = loadImage(dvdImageInput);
+  dvdImage = loadImage("DVD_video_logo.png");
 }
 
 function dvdFunctions() {
@@ -25,6 +25,15 @@ function draw() {
   text("the square has hit the edge " + edgeHit + " times", 10, 540);
   text("the square has hit the corner " + "(doesnt yet work)" + " times", 10, 590);
 }
+
+function handleFile(file) { 
+  print(file.type); 
+  if (file.type === "image") 
+  { 
+    dvdImage = loadImage(dvdImageInput);
+    
+  } 
+} 
 
 class Dvd {
   constructor() {
