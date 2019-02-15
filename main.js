@@ -1,11 +1,13 @@
 let dvd;
 let edgeHit = 0;
 let cornerHit = 0;
+let dvdImage;
 
 function setup() {
   createCanvas(1000, 600);
   print(width, height);
   dvd = new Dvd();
+  dvdImage = loadImage("DVD_video_logo.png")
 }
 
 function dvdFunctions() {
