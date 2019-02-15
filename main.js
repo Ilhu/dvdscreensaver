@@ -35,7 +35,7 @@ class Dvd {
   }
 
   show() {
-    image(image,
+    image(dvdImage,
          this.x,
          this.y,
          this.sizex,
