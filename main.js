@@ -2,6 +2,7 @@ let dvd;
 let edgeHit = 0;
 let cornerHit = 0;
 let dvdImage;
+let dvdImageInput;
 
 function setup() {
   createCanvas(1000, 600);
