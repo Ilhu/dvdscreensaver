@@ -19,8 +19,8 @@ function draw() {
   background(230);
   dvdFunctions();
   textSize(30);
-  text("the square has hit the edge " + edgeHit + " times", 280, 540);
-  text("the square has hit the corner " + "(doesnt yet work)" + " times", 280, 590);
+  text("the square has hit the edge " + edgeHit + " times", 10, 540);
+  text("the square has hit the corner " + "(doesnt yet work)" + " times", 10, 590);
 }
 
 class Dvd {
