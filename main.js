@@ -17,19 +17,23 @@ function dvdFunctions() {
 }
 
 function draw() {
-  background(230);
+  background(0);
   dvdFunctions();
   textSize(30);
   text("the square has hit the edge " + edgeHit + " times", 10, 540);
   text("the square has hit the corner " + "(doesnt yet work)" + " times", 10, 590);
+  fill(255,255,255);
+  let time = millis();
+  rotateX(time / 1000);
+  rotateZ(time / 1234);
 }
 
 class Dvd {
   constructor(dvd) {
     this.x = 300;
     this.y = 400;
-    this.sizex = 100;
-    this.sizey = 60;
+    this.sizex = 140;
+    this.sizey = 90;
 
     this.xspeed = 5;
     this.yspeed = 5;
@@ -38,7 +42,7 @@ class Dvd {
   }
 
   show() {
-    this.dvdImage.resize(100, 60);
+    this.dvdImage.resize(this.sizex, this.sizey);
     image(this.dvdImage,
          this.x,
          this.y)
