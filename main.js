@@ -35,8 +35,8 @@ class Dvd {
     this.sizex = 140;
     this.sizey = 90;
 
-    this.xspeed = 5;
-    this.yspeed = 5;
+    this.xspeed = 2;
+    this.yspeed = 2;
     
     this.dvdImage = dvd;
   }
