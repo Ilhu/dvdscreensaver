@@ -51,13 +51,13 @@ class Dvd {
     this.x = this.x + this.xspeed;
 
 
-    if (this.x + this.sizex == width || this.x == 0) {
+    if (this.x + this.sizex > width || this.x < 0) {
       this.xspeed = this.xspeed * -1;
       edgeHit = edgeHit + 1;
       print(edgeHit)
     }
 
-    if (this.y + this.sizey == height || this.y == 0) {
+    if (this.y + this.sizey > height || this.y < 0) {
       this.yspeed = this.yspeed * -1;
       edgeHit = edgeHit + 1;
       print(edgeHit)
