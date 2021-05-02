@@ -5,7 +5,7 @@ let dvdImage;
 let dvdImageInput;
 
 function setup() {
-  createCanvas(displayWidth-150, displayHeight-100);
+  createCanvas(displayWidth-100, displayHeight-100);
   print(width, height);
   dvdImage = loadImage("DVD_video_logo.png");
   dvd = new Dvd(dvdImage);
