@@ -38,7 +38,7 @@ class Dvd {
   }
 
   show() {
-    this.dvdImage.resize(10, 10);
+    this.dvdImage.resize(100, 60);
     image(this.dvdImage,
          this.x,
          this.y)
