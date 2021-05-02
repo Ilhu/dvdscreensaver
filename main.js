@@ -29,7 +29,7 @@ class Dvd {
   constructor(dvd) {
     this.x = 300;
     this.y = 400;
-    this.sizex = 200;
+    this.sizex = 230;
     this.sizey = 150;
 
     this.xspeed = 4;
