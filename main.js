@@ -22,7 +22,7 @@ function draw() {
   textSize(30);
   text("the square has hit the edge " + edgeHit + " times", 10, displayHeight-60);
   text("the square has hit the corner " + "(doesnt yet work)" + " times", 10, displayHeight-10);
-  fill(0,0,0);
+  fill(255,255,255);
 }
 
 class Dvd {
