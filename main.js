@@ -5,7 +5,7 @@ let dvdImage;
 let dvdImageInput;
 
 function setup() {
-  createCanvas(1000, 600);
+  createCanvas(displayWidth, displayHeight);
   print(width, height);
   dvdImage = loadImage("DVD_video_logo.png");
   dvd = new Dvd(dvdImage);
@@ -20,8 +20,8 @@ function draw() {
   background(255);
   dvdFunctions();
   textSize(30);
-  text("the square has hit the edge " + edgeHit + " times", 10, 540);
-  text("the square has hit the corner " + "(doesnt yet work)" + " times", 10, 590);
+  text("the square has hit the edge " + edgeHit + " times", 10, displayHeight-60);
+  text("the square has hit the corner " + "(doesnt yet work)" + " times", 10, displayHeight-10);
   fill(0,0,0);
 }
 
