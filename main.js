@@ -8,7 +8,7 @@ function setup() {
   createCanvas(1000, 600);
   print(width, height);
   dvdImage = loadImage("DVD_video_logo.png");
-  dvdImage.resize(100, 60);
+  dvdImage.resize(10, 10);
   dvd = new Dvd(dvdImage);
 }
 
