@@ -7,20 +7,9 @@ let dvdImageInput;
 function setup() {
   createCanvas(1000, 600);
   print(width, height);
-  dvdImageInput = createFileInput(handleFile);
-  dvdImageInput.position(1000, 600);
-  dvd = new Dvd();
   dvdImage = loadImage("DVD_video_logo.png");
+  dvd = new Dvd(dvdImage);
 }
-
-function handleFile(file) { 
-  print(file.type); 
-  if (file.type === "image") 
-  { 
-    dvdImage = loadImage(dvdImageInput);
-
-  } 
-} 
 
 function dvdFunctions() {
   dvd.show();
@@ -36,7 +25,7 @@ function draw() {
 }
 
 class Dvd {
-  constructor() {
+  constructor(dvd) {
     this.x = 300;
     this.y = 400;
     this.sizex = 100;
@@ -44,10 +33,14 @@ class Dvd {
 
     this.xspeed = 5;
     this.yspeed = 5;
+    
+    this.dvdImage = dvd;
+    
+    dvd.resize(this.sizex, this.sizey)
   }
 
   show() {
-    image(dvdImage,
+    image(this.dvdImage,
          this.x,
          this.y)
   }
