@@ -8,6 +8,7 @@ function setup() {
   createCanvas(1000, 600);
   print(width, height);
   dvdImage = loadImage("DVD_video_logo.png");
+  dvdImage.resize(100, 60);
   dvd = new Dvd(dvdImage);
 }
 
@@ -35,8 +36,6 @@ class Dvd {
     this.yspeed = 5;
     
     this.dvdImage = dvd;
-    
-    dvd.resize(this.sizex, this.sizey)
   }
 
   show() {
