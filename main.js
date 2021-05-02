@@ -5,7 +5,7 @@ let dvdImage;
 let dvdImageInput;
 
 function setup() {
-  createCanvas(1000, 600, WEBGL);
+  createCanvas(1000, 600);
   print(width, height);
   dvdImage = loadImage("DVD_video_logo.png");
   dvd = new Dvd(dvdImage);
@@ -23,9 +23,6 @@ function draw() {
   text("the square has hit the edge " + edgeHit + " times", 10, 540);
   text("the square has hit the corner " + "(doesnt yet work)" + " times", 10, 590);
   fill(255,255,255);
-  let time = millis();
-  rotateX(time / 1000);
-  rotateZ(time / 1234);
 }
 
 class Dvd {
