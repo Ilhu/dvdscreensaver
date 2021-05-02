@@ -17,12 +17,12 @@ function dvdFunctions() {
 }
 
 function draw() {
-  background(230);
+  background(255);
   dvdFunctions();
   textSize(30);
   text("the square has hit the edge " + edgeHit + " times", 10, 540);
   text("the square has hit the corner " + "(doesnt yet work)" + " times", 10, 590);
-  fill(255,255,255);
+  fill(0,0,0);
 }
 
 class Dvd {
@@ -43,6 +43,7 @@ class Dvd {
     image(this.dvdImage,
          this.x,
          this.y)
+    filter(INVERT)
   }
 
   movement() {
