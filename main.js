@@ -7,10 +7,7 @@ let dvdImageInput;
 function setup() {
   createCanvas(1000, 600);
   print(width, height);
-  dvdImageInput = createFileInput(handleFile);
-  dvdImageInput.position(1000, 600);
   dvd = new Dvd();
-  dvdImage = loadImage("DVD_video_logo.png");
 }
 
 function dvdFunctions() {
@@ -26,15 +23,6 @@ function draw() {
   text("the square has hit the corner " + "(doesnt yet work)" + " times", 10, 590);
 }
 
-function handleFile(file) { 
-  print(file.type); 
-  if (file.type === "image") 
-  { 
-    dvdImage = loadImage(dvdImageInput);
-    
-  } 
-} 
-
 class Dvd {
   constructor() {
     this.x = 300;
@@ -47,8 +35,7 @@ class Dvd {
   }
 
   show() {
-    image(dvdImage,
-         this.x,
+    rect(this.x,
          this.y,
          this.sizex,
          this.sizey)
