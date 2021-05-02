@@ -17,7 +17,7 @@ function dvdFunctions() {
 }
 
 function draw() {
-  background(0);
+  background(230);
   dvdFunctions();
   textSize(30);
   text("the square has hit the edge " + edgeHit + " times", 10, 540);
